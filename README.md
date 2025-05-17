@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GCNM FAQ</title>
-  <meta name="description" content="Perguntas frequentes sobre GCNM MUSIC, Wallet Makubungo, cadastro de artistas e parcerias. Plataforma africana com IA.">
+  <title>GCNM Vídeos</title>
+  <meta name="description" content="Vídeos GCNM MUSIC: destaques de artistas africanos, eventos e campanhas.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body { font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
     header, section { padding: 60px 20px; }
-    header { background-color: #222; color: #fff; text-align: center; }
+    header { background-color: #880e4f; color: #fff; text-align: center; }
     nav { background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px 20px; }
     .lang-icons img { width: 28px; margin-left: 8px; cursor: pointer; border-radius: 50%; }
     footer { background-color: #111; color: #ccc; text-align: center; padding: 20px; }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 30px; }
+    .video-container iframe { position: absolute; top:0; left: 0; width: 100%; height: 100%; }
     #whatsapp { position: fixed; bottom: 20px; right: 20px; z-index: 999; }
   </style>
 </head>
@@ -30,35 +32,40 @@
 
 <!-- Cabeçalho -->
 <header>
-  <h1 id="mainTitle">Perguntas Frequentes (FAQ)</h1>
-  <p id="mainDesc">Tudo o que você precisa saber sobre a GCNM Ventures</p>
+  <h1 id="mainTitle">Vídeos em Destaque</h1>
+  <p id="mainDesc">Artistas, eventos e campanhas da GCNM Ventures</p>
 </header>
 
-<!-- FAQ -->
+<!-- Vídeos -->
 <section>
   <div class="container">
-    <div id="faqContent">
-      <h4>O que é a GCNM MUSIC?</h4>
-      <p>É uma plataforma de música africana com streaming, rankings, IA e wallet integrada.</p>
-      <h4>Como posso me tornar um artista na GCNM?</h4>
-      <p>Acesse a página de artistas e inscreva-se como Novo Talento ou Artista Formal.</p>
-      <h4>O que é Makubungo?</h4>
-      <p>É a moeda digital usada na GCNM Wallet, onde 1 Makubungo = 100 Kz.</p>
-      <h4>Posso usar a GCNM Wallet fora da plataforma?</h4>
-      <p>Sim, qualquer pessoa pode usar, mesmo sem conta no GCNM MUSIC.</p>
-      <h4>Como faço parceria com a GCNM?</h4>
-      <p>Vá para a página de parcerias e preencha o formulário de interesse.</p>
+    <div id="videoTitle" class="mb-4"><h4>Assista aos nossos destaques:</h4></div>
+
+    <!-- Vídeo 1 -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/Z1BCujX3pw8" title="Vídeo 1" frameborder="0" allowfullscreen></iframe>
     </div>
+
+    <!-- Vídeo 2 -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Vídeo 2" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Vídeo 3 -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/FN7ALfpGxiI" title="Vídeo 3" frameborder="0" allowfullscreen></iframe>
+    </div>
+
   </div>
 </section>
 
 <!-- Rodapé -->
 <footer>
-  <p>&copy; 2025 GCNM Ventures – Plataforma Pan-Africana. Todos os direitos reservados.</p>
+  <p>&copy; 2025 GCNM Ventures – Música e Cultura Africana em Vídeo. Todos os direitos reservados.</p>
 </footer>
 
 <!-- WhatsApp -->
-<a href="https://wa.me/244938248388?text=Tenho%20uma%20dúvida%20sobre%20a%20GCNM" target="_blank" id="whatsapp">
+<a href="https://wa.me/244938248388?text=Olá!%20Gostaria%20de%20enviar%20um%20vídeo%20para%20a%20GCNM" target="_blank" id="whatsapp">
   <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" width="60" alt="WhatsApp">
 </a>
 
@@ -66,34 +73,19 @@
 <script>
 const translations = {
   pt: {
-    mainTitle: "Perguntas Frequentes (FAQ)",
-    mainDesc: "Tudo o que você precisa saber sobre a GCNM Ventures",
-    faqContent: `
-      <h4>O que é a GCNM MUSIC?</h4><p>É uma plataforma de música africana com streaming, rankings, IA e wallet integrada.</p>
-      <h4>Como posso me tornar um artista na GCNM?</h4><p>Acesse a página de artistas e inscreva-se como Novo Talento ou Artista Formal.</p>
-      <h4>O que é Makubungo?</h4><p>É a moeda digital usada na GCNM Wallet, onde 1 Makubungo = 100 Kz.</p>
-      <h4>Posso usar a GCNM Wallet fora da plataforma?</h4><p>Sim, qualquer pessoa pode usar, mesmo sem conta no GCNM MUSIC.</p>
-      <h4>Como faço parceria com a GCNM?</h4><p>Vá para a página de parcerias e preencha o formulário de interesse.</p>`
+    mainTitle: "Vídeos em Destaque",
+    mainDesc: "Artistas, eventos e campanhas da GCNM Ventures",
+    videoTitle: "<h4>Assista aos nossos destaques:</h4>"
   },
   en: {
-    mainTitle: "Frequently Asked Questions (FAQ)",
-    mainDesc: "Everything you need to know about GCNM Ventures",
-    faqContent: `
-      <h4>What is GCNM MUSIC?</h4><p>A platform for African music with streaming, rankings, AI, and wallet integration.</p>
-      <h4>How can I become an artist on GCNM?</h4><p>Go to the Artists page and register as a New Talent or Formal Artist.</p>
-      <h4>What is Makubungo?</h4><p>The digital currency used in the GCNM Wallet (1 Makubungo = 100 Kz).</p>
-      <h4>Can I use GCNM Wallet outside the platform?</h4><p>Yes, anyone can use it, even without a GCNM MUSIC account.</p>
-      <h4>How do I partner with GCNM?</h4><p>Visit the Partnerships page and fill in the interest form.</p>`
+    mainTitle: "Featured Videos",
+    mainDesc: "Artists, events and GCNM campaigns",
+    videoTitle: "<h4>Watch our featured highlights:</h4>"
   },
   fr: {
-    mainTitle: "Questions Fréquentes (FAQ)",
-    mainDesc: "Tout ce que vous devez savoir sur GCNM Ventures",
-    faqContent: `
-      <h4>Qu'est-ce que GCNM MUSIC ?</h4><p>Une plateforme de musique africaine avec streaming, IA, wallet intégré et classements.</p>
-      <h4>Comment devenir artiste sur GCNM ?</h4><p>Visitez la page Artistes et inscrivez-vous comme Nouveau Talent ou Artiste Officiel.</p>
-      <h4>Qu'est-ce que le Makubungo ?</h4><p>La monnaie numérique utilisée dans GCNM Wallet (1 Makubungo = 100 Kz).</p>
-      <h4>Puis-je utiliser GCNM Wallet hors plateforme ?</h4><p>Oui, même sans compte sur GCNM MUSIC.</p>
-      <h4>Comment devenir partenaire GCNM ?</h4><p>Allez sur la page Partenariats et remplissez le formulaire d'intérêt.</p>`
+    mainTitle: "Vidéos en Vedette",
+    mainDesc: "Artistes, événements et campagnes de GCNM",
+    videoTitle: "<h4>Regardez nos meilleurs moments :</h4>"
   }
 };
 
@@ -101,7 +93,7 @@ function switchLang(lang) {
   const d = translations[lang];
   document.getElementById('mainTitle').innerText = d.mainTitle;
   document.getElementById('mainDesc').innerText = d.mainDesc;
-  document.getElementById('faqContent').innerHTML = d.faqContent;
+  document.getElementById('videoTitle').innerHTML = d.videoTitle;
 }
 </script>
 
